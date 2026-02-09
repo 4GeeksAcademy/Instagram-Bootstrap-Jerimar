@@ -1,163 +1,178 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Etiquetas meta requeridas -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Hello, world!</title>
-  </head>
+
+<head>
+  <!-- Etiquetas meta requeridas -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Hello, world!</title>
+</head>
+
   <body>
+    <!--SECCIÓN DEL NAV-->
     <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://www.Instagram.com">
             <i class="fa-brands fa-instagram" style="font-size: 30px;"></i>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/archive/2/2a/20160204131724%21Instagram_logo.svg" alt="Logo" width="100" height="30" class="d-inline-block align-text-top" alt="" loading="lazy">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/archive/2/2a/20160204131724%21Instagram_logo.svg"
+              alt="Logo" width="100" height="30" class="d-inline-block align-text-top" alt="" loading="lazy">
           </a>
-        </div>
-        <!--SECCIÓN PARA EL MODAL-->
-        <div class="navbar-nav">
-          <span>
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" style="padding: 14px 10px;">Create a new post</button>
-          </span>
-          
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">create a new post</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Caption:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                  </form>
-                    <i class="fa fa-camera" style="font-size: 20px; margin-right: 2px; border_: 1.5px solid lightgray; padding: 6px; border-radius: 4px;"></i>
-                    <i class="fa fa-location-dot" style="font-size: 20px; border: 1.5px solid solid lightgray; padding:6px 8px; border-radius: 4px;"></i>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
-                </div>
+          <!--SECCIÓN PARA EL MODAL-->
+          <div class="navbar-nav">
+            <div class="nav-item">
+              <button type="button" class="btn btn-success mx-1 py-2" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
+            </div>
+            <!--Dropdown-->
+            <div class="nav-item">
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <!--Dropdown-->
-          <div class="dropdown" style="margin-left: 10px;">
-            <a class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-gear"></i></a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><a class="dropdown-item" href="#">Accesibility</a></li>
-              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
-            </ul>
-          </div>
       </nav>
-      <!--Cards de fotos-->
+      <!--Grid de fotos-->
       <nav>
         <div class="nav nav-pills my-4 justify-content-center" id="pills-tab" role="tablist">
-          <button class="nav-item nav-link text-dark mr-1" id="pills-stacked-tab" data-bs-toggle="pill" data-bs-target="#pills-stacked" type="button" role="tab" aria-controls="pills-stacked" aria-selected="true">
+          <button class="nav-item nav-link text-dark mr-1" id="pills-stacked-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-stacked" type="button" role="tab" aria-controls="pills-stacked" aria-selected="true">
             <i class="fas fa-th"></i>
           </button>
 
-          <button class="nav-link text-dark mx-1" id="pills-displayed-tab" data-bs-toggle="pill" data-bs-target="#pills-displayed" type="button" role="tab" aria-controls="pills-displayed" aria-selected="false">
+          <button class="nav-link text-dark mx-1" id="pills-displayed-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-displayed" type="button" role="tab" aria-controls="pills-displayed"
+            aria-selected="false">
             <i class="fas fa-square"></i>
           </button>
         </div>
       </nav>
-        <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-stacked" role="tabpanel" aria-labelledby="pills-stacked-tab">
-            <div class="row g-2">
-              <div class="col-4 ">
-                <img src="https://picsum.photos/400?random=1" class="img-fluid">
+      <div class="tab-content d-flex justify-content-center">
+        <div class="tab-pane fade show active" id="pills-stacked" role="tabpanel" aria-labelledby="pills-stacked-tab">
+          <div class="row g-2">
+            <div class="col-4 ">
+              <img src="https://picsum.photos/400?random=1" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="https://picsum.photos/400?random=2" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="https://picsum.photos/400?random=3" class="img-fluid">
+            </div>
+            <div class="col-4 ">
+              <img src="https://picsum.photos/400?random=4" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="https://picsum.photos/400?random=5" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="https://picsum.photos/400?random=6" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <!--Cards de fotos-->
+        <div class="tab-pane fade" id="pills-displayed">
+          <div class="d-flex flex-column align-items-center">
+            <div class="card mb-4" style="width: 400px;">
+              <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <b>My Memories</b>
+                <span>06/10</span>
               </div>
-              <div class="col-4">
-                <img src="https://picsum.photos/400?random=2" class="img-fluid">
+              <div class="card-body p-0">
+                <img src="https://picsum.photos/400/300?random=1" class="img-fluid">
               </div>
-              <div class="col-4">
-                <img src="https://picsum.photos/400?random=3" class="img-fluid">
+              <div class="card-footer bg-white pb-2">
+                <p class="card-title"><strong>263 Likes</strong></p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque optio,
+                  quibusdam ducimus voluptatibus quia fugit consequatur maiores distinctio quos sunt, nostrum
+                  doloribus soluta magnam sed minima sequi. Minima, aliquam!</p>
               </div>
-              <div class="col-4 ">
-                <img src="https://picsum.photos/400?random=4" class="img-fluid">
+            </div>
+            <div class="card mb-4" style="width: 400px;">
+              <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <b>My Picture</b>
+                <span>07/10</span>
               </div>
-              <div class="col-4">
-                <img src="https://picsum.photos/400?random=5" class="img-fluid">
+              <div class="card-body p-0">
+                <img src="https://picsum.photos/400/300?random=2" class="img-fluid">
               </div>
-              <div class="col-4">
-                <img src="https://picsum.photos/400?random=6" class="img-fluid">
+              <div class="card-footer bg-white pb-2">
+                <p class="card-title"><strong>562 Likes</strong></p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque optio,
+                  quibusdam ducimus voluptatibus quia fugit consequatur maiores distinctio quos sunt, nostrum
+                  doloribus soluta magnam sed minima sequi. Minima, aliquam!</p>
+              </div>
+            </div>
+            <div class="card mb-4" style="width: 400px;">
+              <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <b>Can't Help Falling in Love</b>
+                <span>08/10</span>
+              </div>
+              <div class="card-body p-0">
+                <img src="https://picsum.photos/400/300?random=3" class="img-fluid">
+              </div>
+              <div class="card-footer bg-white pb-2">
+                <p class="card-title"><strong>1223 Likes</strong></p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque optio,
+                  quibusdam ducimus voluptatibus quia fugit consequatur maiores distinctio quos sunt, nostrum
+                  doloribus soluta magnam sed minima sequi. Minima, aliquam!</p>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="pills-displayed" role="tabpanel" aria-labelledby="pills-displayed-tab">
-            <nav>
-              <div class="container-fluid bg-light">
-                <div class="row justify-content-center">
-                  <div class="card mb-4" style="width: 400px;">
-                    <div class="row" style="display: flex; justify-content: space-between; margin-top:10px; margin-bottom:10px">
-                      <div class="col-6"><b>My Memories</b></div>
-                      <div class="col-6" style="padding-left:75px;">06/10</div>
-                    </div>
-                    <img src="https://picsum.photos/200/300?random=1" class="card-img-top" style="width:100%; height: 100%;" >
-                      <div class="card-body" style="padding:0px 0px 15px 0px">
-                        <p class="card-title"><strong>263 Likes</strong></p>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque optio, quibusdam ducimus voluptatibus quia fugit consequatur maiores distinctio quos sunt, nostrum doloribus soluta magnam sed minima sequi. Minima, aliquam!</p>
-                      </div>
-                  </div>
-                </div>
-              <div class="container-fluid bg-light">
-                <div class="row justify-content-center">
-                  <div class="card mb-4" style="width: 400px;">
-                    <div class="row" style="display: flex; justify-content: space-between; margin-top:10px; margin-bottom:10px">
-                      <div class="col-6"><b>Amazing moments</b></div>
-                      <div class="col-6" style="padding-left:75px;">07/10</div>
-                    </div>
-                    <img src="https://picsum.photos/200/300?random=2" class="card-img-top" style="width:100%; height: 100%;" >
-                      <div class="card-body" style="padding:0px 0px 15px 0px">
-                        <p class="card-title"><strong>05 Likes</strong></p>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque optio, quibusdam ducimus voluptatibus quia fugit consequatur maiores distinctio quos sunt, nostrum doloribus soluta magnam sed minima sequi. Minima, aliquam!</p>
-                      </div>
-                  </div>
-                </div>
-              <div class="container-fluid bg-light">
-                <div class="row justify-content-center">
-                  <div class="card mb-4" style="width: 400px;">
-                    <div class="row" style="display: flex; justify-content: space-between; margin-top:10px; margin-bottom:10px">
-                      <div class="col-6"><b>Love</b></div>
-                      <div class="col-6" style="padding-left:75px;">08/10</div>
-                    </div>
-                    <img src="https://picsum.photos/200/300?random=3" class="card-img-top" style="width:100%; height: 100%;" >
-                      <div class="card-body" style="padding:0px 0px 15px 0px">
-                        <p class="card-title"><strong>102 Likes</strong></p>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cumque optio, quibusdam ducimus voluptatibus quia fugit consequatur maiores distinctio quos sunt, nostrum doloribus soluta magnam sed minima sequi. Minima, aliquam!</p>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </nav>
-
-          </div>
         </div>
 
+        <!--Formulario-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Caption:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+              <i class="fa fa-camera"
+                style="font-size: 20px; margin-right: 2px; border_: 1.5px solid lightgray; padding: 6px; border-radius: 4px;"></i>
+              <i class="fa fa-location-dot"
+                style="font-size: 20px; border: 1.5px solid solid lightgray; padding:6px 8px; border-radius: 4px;"></i>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-
-
-
-
-
-    </div>
-    <!-- JavaScript opcional -->
-    <!-- Popper.js, luego Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+      <!-- JavaScript opcional -->
+      <!-- Popper.js, luego Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
 
   </body>
 </html>
